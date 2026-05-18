@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>جامعة كفر الشيخ | التطبيق الرسمي</title>
-  <meta name="description" content="التطبيق الرسمي لجامعة كفر الشيخ - خدمات إلكترونية متكاملة للطلاب وأعضاء هيئة التدريس والموظفين. حمّل التطبيق الآن.">
+  <title>برنامج هندسة الحاسبات والنظم | جامعة كفر الشيخ</title>
+  <meta name="description" content="الصفحة الرسمية لبرنامج هندسة الحاسبات والنظم بكلية الهندسة - جامعة كفر الشيخ.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,17 +13,16 @@
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="#" class="nav-logo">
-      <img src="assets/logo.png" alt="شعار جامعة كفر الشيخ" style="height:44px;">
+      <img src="assets/logo.png" alt="شعار جامعة كفر الشيخ">
       <span>جامعة كفر الشيخ</span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#hero">الرئيسية</a></li>
-      <li><a href="#about">عن الجامعة</a></li>
-      <li><a href="#features">المميزات</a></li>
-      <li><a href="#faculty">هيئة التدريس</a></li>
+      <li><a href="#vision-mission">الرؤية والرسالة</a></li>
+      <li><a href="#faculty">أعضاء هيئة التدريس</a></li>
+      <li><a href="#assistants">الهيئة المعاونة</a></li>
       <li><a href="#regulations">اللائحة</a></li>
-      <li><a href="#download">تحميل التطبيق</a></li>
-      <li><a href="#contact">اتصل بنا</a></li>
+      <li><a href="#more">روابط هامة</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="القائمة">☰</button>
   </div>
@@ -31,302 +30,241 @@
 
 <!-- ========== HERO ========== -->
 <section class="hero" id="hero">
-  <div class="hero-bg">
-    <img src="assets/images/campus-hero.png" alt="حرم جامعة كفر الشيخ">
-  </div>
   <div class="container">
     <div class="hero-badge">
-      <span class="dot"></span>
-      التطبيق الرسمي لجامعة كفر الشيخ
+      كلية الهندسة - جامعة كفر الشيخ
     </div>
-    <h1>كل خدمات الجامعة<br>في تطبيق واحد</h1>
-    <p>تطبيق جامعة كفر الشيخ يوفر لك وصولاً سريعاً وسهلاً لكافة الخدمات الجامعية - من نتائج الامتحانات إلى الجداول الدراسية وأعضاء هيئة التدريس والأخبار الجامعية.</p>
+    <h1>برنامج هندسة الحاسبات والنظم</h1>
+    <p>برنامج أكاديمي متميز يهدف إلى إعداد كوادر هندسية قادرة على الابتكار وتطوير التقنيات الحديثة لمواكبة متطلبات سوق العمل المحلي والدولي.</p>
     <div class="hero-buttons">
-      <a href="https://play.google.com/store/apps/details?id=kfs.edu.eg&hl=ar" target="_blank" class="btn-primary" id="hero-download-btn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-        حمّل من Google Play
+      <a href="#vision-mission" class="btn-primary">
+        تعرف على البرنامج
       </a>
-      <a href="https://apps.apple.com/us/app/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D9%83%D9%81%D8%B1%D8%A7%D9%84%D8%B4%D9%8A%D8%AE/id6449624998" target="_blank" class="btn-outline" id="hero-appstore-btn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
-        حمّل من App Store
+      <a href="#regulations" class="btn-outline">
+        تصفح اللائحة
       </a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <div class="stat-number">١٩+</div>
-        <div class="stat-label">كلية ومعهد</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">٣٠٠٠+</div>
-        <div class="stat-label">عضو هيئة تدريس</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">٨٠,٠٠٠+</div>
-        <div class="stat-label">طالب وطالبة</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">٢٠٠٦</div>
-        <div class="stat-label">سنة التأسيس</div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ========== ABOUT ========== -->
-<section id="about">
+<!-- ========== VISION & MISSION ========== -->
+<section id="vision-mission">
   <div class="container">
     <div class="accent-line"></div>
-    <h2 class="section-title">عن جامعة كفر الشيخ</h2>
-    <p class="section-subtitle">صرح علمي شامخ في قلب دلتا مصر</p>
-    <div class="about-grid">
-      <div class="about-text">
-        <h3>رؤية الجامعة</h3>
-        <p>أن تكون جامعة رائدة محلياً وإقليمياً ودولياً في التعليم والبحث العلمي وقيادة وتنمية المجتمع ومتميزة في صناعة المعرفة.</p>
-        <h3>رسالة الجامعة</h3>
-        <p>تقدم جامعة كفر الشيخ الحكومية برامج تعليمية متميزة تنتج بحوثاً تطبيقية مبتكرة لخدمة المجتمع وتنمية البيئة لتسهم في بناء اقتصاد المعرفة وتفعيل الشراكة المحلية والإقليمية والدولية لإعداد خريجين قادرين على القيادة والإبداع والتعلم المستمر.</p>
+    <h2 class="section-title">رؤية ورسالة البرنامج</h2>
+    <p class="section-subtitle">نسعى دائماً للتميز الأكاديمي والريادة في مجال هندسة الحاسبات والنظم.</p>
+    
+    <div class="vision-mission-grid">
+      <div class="vm-card">
+        <div class="vm-icon">👁️</div>
+        <h3>الرؤية</h3>
+        <p>"أن يكون برنامج هندسة الحاسبات والنظم مواكباً للتطور التكنولوجي ذو مكانة محلية واقليمية ودولية متميزة تتسم بجودة الأداء."</p>
       </div>
-      <div class="about-image">
-        <img src="assets/images/campus-hero.png" alt="حرم جامعة كفر الشيخ" loading="lazy">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== FEATURES ========== -->
-<section id="features">
-  <div class="container">
-    <div class="accent-line"></div>
-    <h2 class="section-title">مميزات التطبيق</h2>
-    <p class="section-subtitle">كل ما تحتاجه من خدمات جامعية في مكان واحد</p>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">📊</div>
-        <h3>نتائج الامتحانات</h3>
-        <p>استعلم عن نتائجك بسهولة وسرعة فور إعلانها مباشرة من خلال التطبيق.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📅</div>
-        <h3>الجداول الدراسية</h3>
-        <p>تعرف على جداول المحاضرات والامتحانات لجميع الكليات والأقسام.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">👨‍🏫</div>
-        <h3>أعضاء هيئة التدريس</h3>
-        <p>تصفح بيانات أعضاء هيئة التدريس والتواصل معهم بسهولة.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📰</div>
-        <h3>الأخبار والفعاليات</h3>
-        <p>تابع آخر أخبار وفعاليات الجامعة والمؤتمرات العلمية أولاً بأول.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🏛️</div>
-        <h3>الكليات والأقسام</h3>
-        <p>تعرف على جميع الكليات الـ ١٩ والأقسام العلمية ومتطلبات الالتحاق.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔔</div>
-        <h3>الإشعارات الفورية</h3>
-        <p>احصل على إشعارات فورية بأهم القرارات والإعلانات الجامعية.</p>
+      
+      <div class="vm-card">
+        <div class="vm-icon">🎯</div>
+        <h3>الرسالة</h3>
+        <p>"يهدف برنامج هندسة الحاسبات والنظم إلى تخريج مهندسين مؤهلين يمتلكون المهارات والمعرفة التي تساعدهم على المنافسة في سوق العمل ومواكبة متطلباته، كما يحرص البرنامج على إعداد خريجين مدركين لمسؤولياتهم تجاه المجتمع والبيئة، ملتزمين بأخلاقيات المهنة، وقادرين على إجراء بحوث علمية وتطبيقية تخدم المجتمع وتسهم في التنمية المستدامة، مع توفير بيئة تعليمية محفزة تدعم الابتكار والتعلم المستمر."</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ========== FACULTY ========== -->
-<section id="faculty">
+<section id="faculty" style="background-color: var(--bg-card);">
   <div class="container">
     <div class="accent-line"></div>
     <h2 class="section-title">أعضاء هيئة التدريس</h2>
-    <p class="section-subtitle">نخبة من الأساتذة والباحثين المتميزين</p>
-    <div class="faculty-grid">
-      <div class="faculty-card">
-        <img src="assets/images/professor-female.png" alt="د. دينا" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. دينا</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-female.png" alt="د. غادة همسية" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. غادة همسية</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-female.png" alt="د. هبه جمال" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. هبه جمال</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-female.png" alt="د. هبه البحيري" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. هبه البحيري</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-male.png" alt="د. علي" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. علي</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-male.png" alt="د. عبدالفتاح هليل" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. عبدالفتاح هليل</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-male.png" alt="د. حمدي" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. حمدي</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-male.png" alt="د. عبدالونيس" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. عبدالونيس</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-male.png" alt="د. محمد جبر" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. محمد جبر</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
-      <div class="faculty-card">
-        <img src="assets/images/professor-female.png" alt="د. نرمين" class="faculty-img" loading="lazy">
-        <div class="faculty-info">
-          <h3>د. نرمين</h3>
-          <div class="title">عضو هيئة تدريس</div>
-          <div class="dept">كلية الحاسبات والمعلومات</div>
-        </div>
-      </div>
+    <p class="section-subtitle">نخبة من الأساتذة ذوي الكفاءة العالية لتقديم أفضل مستوى تعليمي.</p>
+    
+    <div class="table-container animate-in">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>م</th>
+            <th>الاسم</th>
+            <th>الدرجة العلمية</th>
+            <th>التخصص</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>١</td>
+            <td>د/ علي عبد الغفار صقر</td>
+            <td>أستاذ مساعد</td>
+            <td>هندسة الحاسبات والنظم</td>
+          </tr>
+          <tr>
+            <td>٢</td>
+            <td>د/ عبد الفتاح عطية هليل</td>
+            <td>أستاذ مساعد</td>
+            <td>هندسة الحاسبات والنظم</td>
+          </tr>
+          <tr>
+            <td>٣</td>
+            <td>د/ حمدي كمال المنير</td>
+            <td>أستاذ مساعد</td>
+            <td>هندسة الحاسبات والنظم</td>
+          </tr>
+          <tr>
+            <td>٤</td>
+            <td>د/ غادة مصطفى هميسة</td>
+            <td>مدرس</td>
+            <td>هندسة الحاسبات والنظم</td>
+          </tr>
+          <tr>
+            <td>٥</td>
+            <td>د/ هبه جمال</td>
+            <td>مدرس</td>
+            <td>هندسة الحاسبات والنظم</td>
+          </tr>
+          <tr>
+            <td>٦</td>
+            <td>د/ هبه البحيري</td>
+            <td>مدرس</td>
+            <td>هندسة الحاسبات والنظم</td>
+          </tr>
+          <tr>
+            <td>٧</td>
+            <td>د/ نرمين جمال</td>
+            <td>مدرس</td>
+            <td>هندسة الحاسبات والنظم</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TEACHING ASSISTANTS ========== -->
+<section id="assistants">
+  <div class="container">
+    <div class="accent-line"></div>
+    <h2 class="section-title">الهيئة المعاونة</h2>
+    <p class="section-subtitle">الطاقم المعاون من المدرسين المساعدين والمعيدين الداعمين للعملية التعليمية.</p>
+    
+    <div class="table-container animate-in">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>م</th>
+            <th>الاسم</th>
+            <th>الوظيفة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>١</td>
+            <td>م/ دينا عادل</td>
+            <td>مدرس مساعد / معيد</td>
+          </tr>
+          <tr>
+            <td>٢</td>
+            <td>م/ ندى محمد</td>
+            <td>مدرس مساعد / معيد</td>
+          </tr>
+          <tr>
+            <td>٣</td>
+            <td>م/ كامل محمد</td>
+            <td>مدرس مساعد / معيد</td>
+          </tr>
+          <tr>
+            <td>٤</td>
+            <td>م/ سلمى سامح</td>
+            <td>مدرس مساعد / معيد</td>
+          </tr>
+          <tr>
+            <td>٥</td>
+            <td>م/ آلاء سامي</td>
+            <td>مدرس مساعد / معيد</td>
+          </tr>
+          <tr>
+            <td>٦</td>
+            <td>م/ محمد حسن</td>
+            <td>مدرس مساعد / معيد</td>
+          </tr>
+          <tr>
+            <td>٧</td>
+            <td>م/ منة الخولي</td>
+            <td>مدرس مساعد / معيد</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
 <!-- ========== REGULATIONS ========== -->
-<section id="regulations">
+<section id="regulations" style="background-color: var(--bg-card);">
   <div class="container">
     <div class="accent-line"></div>
-    <h2 class="section-title">من اللائحة الجامعية</h2>
-    <p class="section-subtitle">أهم بنود اللائحة الداخلية لجامعة كفر الشيخ</p>
-    <div class="regulations-card">
-      <h3>📜 أحكام عامة من اللائحة</h3>
-      <ul class="reg-list">
-        <li>
-          <span class="reg-icon">✦</span>
-          تلتزم الجامعة بتطبيق معايير الجودة والاعتماد الأكاديمي في جميع البرامج التعليمية.
-        </li>
-        <li>
-          <span class="reg-icon">✦</span>
-          مدة الدراسة لنيل درجة البكالوريوس أربع سنوات دراسية على الأقل حسب طبيعة الكلية.
-        </li>
-        <li>
-          <span class="reg-icon">✦</span>
-          يُشترط لقيد الطالب بالدراسات العليا الحصول على تقدير جيد على الأقل في مرحلة البكالوريوس.
-        </li>
-        <li>
-          <span class="reg-icon">✦</span>
-          يجب ألا تقل نسبة حضور الطالب عن ٧٥٪ من إجمالي ساعات المقرر الدراسي.
-        </li>
-        <li>
-          <span class="reg-icon">✦</span>
-          تُعقد امتحانات نهاية الفصل الدراسي وفقاً للجداول المعتمدة من مجلس الكلية.
-        </li>
-        <li>
-          <span class="reg-icon">✦</span>
-          يحق للطالب التظلم من نتيجة الامتحان خلال أسبوعين من تاريخ إعلان النتائج.
-        </li>
-        <li>
-          <span class="reg-icon">✦</span>
-          تُمنح الجامعة درجات علمية في: البكالوريوس، الدبلوم، الماجستير، والدكتوراه.
-        </li>
-        <li>
-          <span class="reg-icon">✦</span>
-          تخضع الأنشطة الطلابية للإشراف الأكاديمي من خلال وحدة رعاية الشباب بكل كلية.
-        </li>
-      </ul>
+    <h2 class="section-title">لائحة البرنامج</h2>
+    <p class="section-subtitle">الضوابط والقوانين المنظمة للدراسة ببرنامج هندسة الحاسبات والنظم.</p>
+    
+    <div class="table-container animate-in">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>البند</th>
+            <th>الوصف / التفاصيل</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>نظام الدراسة</td>
+            <td>يعتمد البرنامج نظام الساعات المعتمدة.</td>
+          </tr>
+          <tr>
+            <td>متطلبات التخرج</td>
+            <td>استكمال جميع الساعات المعتمدة المقررة بنجاح وفقاً للمسار الأكاديمي.</td>
+          </tr>
+          <tr>
+            <td>قيد الطلاب</td>
+            <td>يخضع لقواعد التنسيق واللوائح الداخلية للكلية والجامعة.</td>
+          </tr>
+          <tr>
+            <td>الامتحانات</td>
+            <td>تُعقد بناءً على المعايير الأكاديمية لضمان تقييم دقيق لمخرجات التعلم.</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center; color: var(--text-muted);">
+              <em>سيتم إضافة المزيد من تفاصيل اللائحة في التحديثات القادمة</em>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<!-- ========== DOWNLOAD ========== -->
-<section class="download-section" id="download">
-  <div class="container">
-    <div class="download-content">
-      <h2>حمّل التطبيق الآن</h2>
-      <p>ابدأ رحلتك الأكاديمية مع تطبيق جامعة كفر الشيخ الرسمي - متاح على جميع المنصات.</p>
-      <div class="store-buttons">
-        <a href="https://play.google.com/store/apps/details?id=kfs.edu.eg&hl=ar" target="_blank" class="store-btn" id="download-google-btn">
-          <span class="store-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-          </span>
-          <div class="store-btn-text">
-            <small>متاح على</small>
-            <span>Google Play</span>
-          </div>
-        </a>
-        <a href="https://apps.apple.com/us/app/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D9%83%D9%81%D8%B1%D8%A7%D9%84%D8%B4%D9%8A%D8%AE/id6449624998" target="_blank" class="store-btn" id="download-apple-btn">
-          <span class="store-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
-          </span>
-          <div class="store-btn-text">
-            <small>متاح على</small>
-            <span>App Store</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== CONTACT ========== -->
-<section id="contact">
+<!-- ========== MORE LINKS (PLACEHOLDERS) ========== -->
+<section id="more">
   <div class="container">
     <div class="accent-line"></div>
-    <h2 class="section-title">تواصل معنا</h2>
-    <p class="section-subtitle">نسعد بتواصلكم واستفساراتكم</p>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <div class="contact-icon">📍</div>
-        <h3>العنوان</h3>
-        <p>جامعة كفر الشيخ<br>مصر، كفر الشيخ</p>
-      </div>
-      <div class="contact-card">
-        <div class="contact-icon">📧</div>
-        <h3>البريد الإلكتروني</h3>
-        <p><a href="mailto:President@kfs.edu.eg">President@kfs.edu.eg</a></p>
-      </div>
-      <div class="contact-card">
-        <div class="contact-icon">📞</div>
-        <h3>الهاتف</h3>
-        <p dir="ltr">002-047-3109590<br>002-047-3109591</p>
-      </div>
-      <div class="contact-card">
-        <div class="contact-icon">🌐</div>
-        <h3>الموقع الرسمي</h3>
-        <p><a href="https://www.kfs.edu.eg" target="_blank">www.kfs.edu.eg</a></p>
-      </div>
+    <h2 class="section-title">المزيد عن البرنامج</h2>
+    <p class="section-subtitle">استكشف المزيد من المعلومات حول مميزات وادارة البرنامج.</p>
+    
+    <div class="program-sections-grid">
+      <a href="#" class="p-section-card">
+        <div class="p-section-icon">✨</div>
+        <h3>السمات المميزة للبرنامج</h3>
+        <p>تعرف على ما يجعل برنامج هندسة الحاسبات والنظم فريداً من نوعه ومطلوباً في سوق العمل.</p>
+        <div class="arrow">استكشف ←</div>
+      </a>
+      
+      <a href="#" class="p-section-card">
+        <div class="p-section-icon">🏛️</div>
+        <h3>مجلس إدارة البرنامج</h3>
+        <p>تعرف على تشكيل مجلس إدارة البرنامج والمسؤولين عن تطوير ومتابعة العملية التعليمية.</p>
+        <div class="arrow">استكشف ←</div>
+      </a>
+      
+      <a href="#" class="p-section-card">
+        <div class="p-section-icon">🌍</div>
+        <h3>الطلاب الوافدين</h3>
+        <p>دليل مخصص للطلاب الدوليين حول كيفية الالتحاق بالبرنامج والخدمات المقدمة لهم.</p>
+        <div class="arrow">استكشف ←</div>
+      </a>
     </div>
   </div>
 </section>
@@ -334,13 +272,11 @@
 <!-- ========== FOOTER ========== -->
 <footer class="footer">
   <div class="container">
-    <p>© ٢٠٢٦ جامعة كفر الشيخ - جميع الحقوق محفوظة</p>
+    <p>© ٢٠٢٦ كلية الهندسة - جامعة كفر الشيخ | برنامج هندسة الحاسبات والنظم</p>
     <div class="footer-links">
-      <a href="https://www.kfs.edu.eg" target="_blank">الموقع الرسمي</a>
-      <a href="https://www.facebook.com/www.kfs.edu.eg" target="_blank">فيسبوك</a>
-      <a href="https://www.instagram.com/kfsuni/" target="_blank">انستجرام</a>
-      <a href="https://www.youtube.com/channel/UCOnci330Iqfp9uHbZcd-fKg" target="_blank">يوتيوب</a>
-      <a href="https://kfs.edu.eg/displaytopic.aspx?topic=97538" target="_blank">سياسة الخصوصية</a>
+      <a href="https://www.kfs.edu.eg" target="_blank">موقع الجامعة الرئيسي</a>
+      <a href="#">تواصل معنا</a>
+      <a href="#">الشروط والأحكام</a>
     </div>
   </div>
 </footer>
@@ -356,11 +292,16 @@ navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => na
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('animate-in'); observer.unobserve(e.target); } });
 }, { threshold: 0.1 });
-document.querySelectorAll('.feature-card, .faculty-card, .contact-card, .about-grid, .regulations-card').forEach(el => observer.observe(el));
+document.querySelectorAll('.vm-card, .table-container, .p-section-card').forEach(el => observer.observe(el));
 
 // Navbar background on scroll
 window.addEventListener('scroll', () => {
-  document.getElementById('navbar').style.background = window.scrollY > 50 ? 'rgba(11,20,37,0.95)' : 'rgba(11,20,37,0.85)';
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    navbar.style.boxShadow = '0 4px 16px rgba(0,0,0,0.1)';
+  } else {
+    navbar.style.boxShadow = '0 2px 8px rgba(0,0,0,0.05)';
+  }
 });
 </script>
 </body>
