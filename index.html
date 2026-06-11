@@ -3,306 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>برنامج هندسة الحاسبات والنظم | جامعة كفر الشيخ</title>
-  <meta name="description" content="الصفحة الرسمية لبرنامج هندسة الحاسبات والنظم بكلية الهندسة - جامعة كفر الشيخ.">
+  <title>بوابة البرامج الأكاديمية | كلية الهندسة جامعة كفر الشيخ</title>
+  <meta name="description" content="البوابة الرسمية لبرامج كلية الهندسة بجامعة كفر الشيخ.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .portal-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #eef2f3 0%, #ffffff 100%);
+      position: relative;
+    }
+    .portal-hero::before {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; width: 100%; height: 100%;
+      background: url('assets/images/campus-hero.png') no-repeat center center/cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+    .portal-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 100%;
+    }
+    .portal-logo {
+      width: 120px;
+      margin-bottom: 24px;
+    }
+    .portal-title {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+    }
+    .portal-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+    }
+    .portal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .portal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px 24px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .portal-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+    .portal-icon {
+      font-size: 3rem;
+      margin-bottom: 24px;
+      width: 80px; height: 80px;
+      background: rgba(32, 93, 170, 0.05);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .portal-card h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+    .portal-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .portal-card .btn-outline {
+      margin-top: 24px;
+      min-width: 140px;
+      padding: 10px 24px;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
 
-<!-- ========== NAVBAR ========== -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <a href="#" class="nav-logo">
-      <img src="assets/logo.png" alt="شعار جامعة كفر الشيخ">
-      <span>جامعة كفر الشيخ</span>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#hero">الرئيسية</a></li>
-      <li><a href="#vision-mission">الرؤية والرسالة</a></li>
-      <li><a href="#faculty">أعضاء هيئة التدريس</a></li>
-      <li><a href="#assistants">الهيئة المعاونة</a></li>
-      <li><a href="#regulations">اللائحة</a></li>
-      <li><a href="#more">روابط هامة</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="القائمة">☰</button>
-  </div>
-</nav>
-
-<!-- ========== HERO ========== -->
-<section class="hero" id="hero">
-  <div class="container">
-    <div class="hero-badge">
-      كلية الهندسة - جامعة كفر الشيخ
-    </div>
-    <h1>برنامج هندسة الحاسبات والنظم</h1>
-    <p>برنامج أكاديمي متميز يهدف إلى إعداد كوادر هندسية قادرة على الابتكار وتطوير التقنيات الحديثة لمواكبة متطلبات سوق العمل المحلي والدولي.</p>
-    <div class="hero-buttons">
-      <a href="#vision-mission" class="btn-primary">
-        تعرف على البرنامج
-      </a>
-      <a href="#regulations" class="btn-outline">
-        تصفح اللائحة
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ========== VISION & MISSION ========== -->
-<section id="vision-mission">
-  <div class="container">
-    <div class="accent-line"></div>
-    <h2 class="section-title">رؤية ورسالة البرنامج</h2>
-    <p class="section-subtitle">نسعى دائماً للتميز الأكاديمي والريادة في مجال هندسة الحاسبات والنظم.</p>
+<section class="portal-hero">
+  <div class="portal-content">
+    <img src="assets/logo.png" alt="شعار جامعة كفر الشيخ" class="portal-logo animate-in">
+    <h1 class="portal-title animate-in" style="animation-delay: 0.1s;">بوابة البرامج الأكاديمية</h1>
+    <p class="portal-subtitle animate-in" style="animation-delay: 0.2s;">كلية الهندسة - جامعة كفر الشيخ</p>
     
-    <div class="vision-mission-grid">
-      <div class="vm-card">
-        <div class="vm-icon">👁️</div>
-        <h3>الرؤية</h3>
-        <p>"أن يكون برنامج هندسة الحاسبات والنظم مواكباً للتطور التكنولوجي ذو مكانة محلية واقليمية ودولية متميزة تتسم بجودة الأداء."</p>
-      </div>
+    <div class="portal-grid">
       
-      <div class="vm-card">
-        <div class="vm-icon">🎯</div>
-        <h3>الرسالة</h3>
-        <p>"يهدف برنامج هندسة الحاسبات والنظم إلى تخريج مهندسين مؤهلين يمتلكون المهارات والمعرفة التي تساعدهم على المنافسة في سوق العمل ومواكبة متطلباته، كما يحرص البرنامج على إعداد خريجين مدركين لمسؤولياتهم تجاه المجتمع والبيئة، ملتزمين بأخلاقيات المهنة، وقادرين على إجراء بحوث علمية وتطبيقية تخدم المجتمع وتسهم في التنمية المستدامة، مع توفير بيئة تعليمية محفزة تدعم الابتكار والتعلم المستمر."</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== FACULTY ========== -->
-<section id="faculty" style="background-color: var(--bg-card);">
-  <div class="container">
-    <div class="accent-line"></div>
-    <h2 class="section-title">أعضاء هيئة التدريس</h2>
-    <p class="section-subtitle">نخبة من الأساتذة ذوي الكفاءة العالية لتقديم أفضل مستوى تعليمي.</p>
-    
-    <div class="table-container animate-in">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            <th>م</th>
-            <th>الاسم</th>
-            <th>الدرجة العلمية</th>
-            <th>التخصص</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>١</td>
-            <td>د/ علي عبد الغفار صقر</td>
-            <td>أستاذ مساعد</td>
-            <td>هندسة الحاسبات والنظم</td>
-          </tr>
-          <tr>
-            <td>٢</td>
-            <td>د/ عبد الفتاح عطية هليل</td>
-            <td>أستاذ مساعد</td>
-            <td>هندسة الحاسبات والنظم</td>
-          </tr>
-          <tr>
-            <td>٣</td>
-            <td>د/ حمدي كمال المنير</td>
-            <td>أستاذ مساعد</td>
-            <td>هندسة الحاسبات والنظم</td>
-          </tr>
-          <tr>
-            <td>٤</td>
-            <td>د/ غادة مصطفى هميسة</td>
-            <td>مدرس</td>
-            <td>هندسة الحاسبات والنظم</td>
-          </tr>
-          <tr>
-            <td>٥</td>
-            <td>د/ هبه جمال</td>
-            <td>مدرس</td>
-            <td>هندسة الحاسبات والنظم</td>
-          </tr>
-          <tr>
-            <td>٦</td>
-            <td>د/ هبه البحيري</td>
-            <td>مدرس</td>
-            <td>هندسة الحاسبات والنظم</td>
-          </tr>
-          <tr>
-            <td>٧</td>
-            <td>د/ نرمين جمال</td>
-            <td>مدرس</td>
-            <td>هندسة الحاسبات والنظم</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ========== TEACHING ASSISTANTS ========== -->
-<section id="assistants">
-  <div class="container">
-    <div class="accent-line"></div>
-    <h2 class="section-title">الهيئة المعاونة</h2>
-    <p class="section-subtitle">الطاقم المعاون من المدرسين المساعدين والمعيدين الداعمين للعملية التعليمية.</p>
-    
-    <div class="table-container animate-in">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            <th>م</th>
-            <th>الاسم</th>
-            <th>الوظيفة</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>١</td>
-            <td>م/ دينا عادل</td>
-            <td>مدرس مساعد / معيد</td>
-          </tr>
-          <tr>
-            <td>٢</td>
-            <td>م/ ندى محمد</td>
-            <td>مدرس مساعد / معيد</td>
-          </tr>
-          <tr>
-            <td>٣</td>
-            <td>م/ كامل محمد</td>
-            <td>مدرس مساعد / معيد</td>
-          </tr>
-          <tr>
-            <td>٤</td>
-            <td>م/ سلمى سامح</td>
-            <td>مدرس مساعد / معيد</td>
-          </tr>
-          <tr>
-            <td>٥</td>
-            <td>م/ آلاء سامي</td>
-            <td>مدرس مساعد / معيد</td>
-          </tr>
-          <tr>
-            <td>٦</td>
-            <td>م/ محمد حسن</td>
-            <td>مدرس مساعد / معيد</td>
-          </tr>
-          <tr>
-            <td>٧</td>
-            <td>م/ منة الخولي</td>
-            <td>مدرس مساعد / معيد</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ========== REGULATIONS ========== -->
-<section id="regulations" style="background-color: var(--bg-card);">
-  <div class="container">
-    <div class="accent-line"></div>
-    <h2 class="section-title">لائحة البرنامج</h2>
-    <p class="section-subtitle">الضوابط والقوانين المنظمة للدراسة ببرنامج هندسة الحاسبات والنظم.</p>
-    
-    <div class="table-container animate-in">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            <th>البند</th>
-            <th>الوصف / التفاصيل</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>نظام الدراسة</td>
-            <td>يعتمد البرنامج نظام الساعات المعتمدة.</td>
-          </tr>
-          <tr>
-            <td>متطلبات التخرج</td>
-            <td>استكمال جميع الساعات المعتمدة المقررة بنجاح وفقاً للمسار الأكاديمي.</td>
-          </tr>
-          <tr>
-            <td>قيد الطلاب</td>
-            <td>يخضع لقواعد التنسيق واللوائح الداخلية للكلية والجامعة.</td>
-          </tr>
-          <tr>
-            <td>الامتحانات</td>
-            <td>تُعقد بناءً على المعايير الأكاديمية لضمان تقييم دقيق لمخرجات التعلم.</td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center; color: var(--text-muted);">
-              <em>سيتم إضافة المزيد من تفاصيل اللائحة في التحديثات القادمة</em>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ========== MORE LINKS (PLACEHOLDERS) ========== -->
-<section id="more">
-  <div class="container">
-    <div class="accent-line"></div>
-    <h2 class="section-title">المزيد عن البرنامج</h2>
-    <p class="section-subtitle">استكشف المزيد من المعلومات حول مميزات وادارة البرنامج.</p>
-    
-    <div class="program-sections-grid">
-      <a href="#" class="p-section-card">
-        <div class="p-section-icon">✨</div>
-        <h3>السمات المميزة للبرنامج</h3>
-        <p>تعرف على ما يجعل برنامج هندسة الحاسبات والنظم فريداً من نوعه ومطلوباً في سوق العمل.</p>
-        <div class="arrow">استكشف ←</div>
+      <!-- Computer Engineering -->
+      <a href="computer.html" class="portal-card animate-in" style="animation-delay: 0.3s;">
+        <div class="portal-icon">💻</div>
+        <h2>هندسة الحاسبات والنظم</h2>
+        <p>إعداد كوادر هندسية مبتكرة في مجالات البرمجيات والذكاء الاصطناعي وهندسة الحاسوب.</p>
+        <span class="btn-outline">دخول للبرنامج</span>
       </a>
-      
-      <a href="#" class="p-section-card">
-        <div class="p-section-icon">🏛️</div>
-        <h3>مجلس إدارة البرنامج</h3>
-        <p>تعرف على تشكيل مجلس إدارة البرنامج والمسؤولين عن تطوير ومتابعة العملية التعليمية.</p>
-        <div class="arrow">استكشف ←</div>
+
+      <!-- Power Engineering -->
+      <a href="power.html" class="portal-card animate-in" style="animation-delay: 0.4s;">
+        <div class="portal-icon">⚡</div>
+        <h2>هندسة القوى والآلات الكهربية</h2>
+        <p>تأهيل مهندسين ذوي كفاءة عالية في مجالات توليد ونقل وتوزيع الطاقة الكهربية المتجددة.</p>
+        <span class="btn-outline">دخول للبرنامج</span>
       </a>
-      
-      <a href="#" class="p-section-card">
-        <div class="p-section-icon">🌍</div>
-        <h3>الطلاب الوافدين</h3>
-        <p>دليل مخصص للطلاب الدوليين حول كيفية الالتحاق بالبرنامج والخدمات المقدمة لهم.</p>
-        <div class="arrow">استكشف ←</div>
+
+      <!-- Communications Engineering -->
+      <a href="communications.html" class="portal-card animate-in" style="animation-delay: 0.5s;">
+        <div class="portal-icon">📡</div>
+        <h2>هندسة الإلكترونيات والاتصالات</h2>
+        <p>بناء خبرات رائدة في قطاع الاتصالات اللاسلكية والأنظمة الإلكترونية المتقدمة.</p>
+        <span class="btn-outline">دخول للبرنامج</span>
       </a>
+
     </div>
   </div>
 </section>
 
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <div class="container">
-    <p>© ٢٠٢٦ كلية الهندسة - جامعة كفر الشيخ | برنامج هندسة الحاسبات والنظم</p>
-    <div class="footer-links">
-      <a href="https://www.kfs.edu.eg" target="_blank">موقع الجامعة الرئيسي</a>
-      <a href="#">تواصل معنا</a>
-      <a href="#">الشروط والأحكام</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-// Mobile nav toggle
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
-navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('active')));
-
-// Scroll animations
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('animate-in'); observer.unobserve(e.target); } });
-}, { threshold: 0.1 });
-document.querySelectorAll('.vm-card, .table-container, .p-section-card').forEach(el => observer.observe(el));
-
-// Navbar background on scroll
-window.addEventListener('scroll', () => {
-  const navbar = document.getElementById('navbar');
-  if (window.scrollY > 50) {
-    navbar.style.boxShadow = '0 4px 16px rgba(0,0,0,0.1)';
-  } else {
-    navbar.style.boxShadow = '0 2px 8px rgba(0,0,0,0.05)';
-  }
-});
-</script>
 </body>
 </html>

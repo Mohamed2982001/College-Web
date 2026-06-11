@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استراتيجية التعليم والتعلم - هندسة الحاسبات والنظم | جامعة كفر الشيخ</title>
+  <meta name="description" content="استراتيجية التعليم والتعلم لبرنامج هندسة الحاسبات والنظم بكلية الهندسة - جامعة كفر الشيخ.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== PROGRAM SWITCHER BAR ========== -->
+<div class="program-switcher">
+  <div class="container">
+    <span>تصفح برامج الكلية:</span>
+    <div class="switcher-links">
+      <a href="computer.html" class="active">💻 هندسة الحاسبات</a>
+      <a href="power.html">⚡ هندسة القوى</a>
+      <a href="communications.html">📡 هندسة الاتصالات</a>
+    </div>
+  </div>
+</div>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="شعار جامعة كفر الشيخ">
+      <span>جامعة كفر الشيخ</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="computer.html#hero">الرئيسية</a></li>
+      <li><a href="computer.html#vision-mission">الرؤية والرسالة</a></li>
+      <li><a href="strategy-computer.html" class="active">استراتيجية التعليم</a></li>
+      <li><a href="computer.html#faculty">أعضاء هيئة التدريس</a></li>
+      <li><a href="computer.html#assistants">الهيئة المعاونة</a></li>
+      <li><a href="computer.html#regulations">اللائحة</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="القائمة">☰</button>
+  </div>
+</nav>
+
+<!-- ========== STRATEGY HEADER ========== -->
+<section class="strategy-hero">
+  <div class="container text-center">
+    <h1>استراتيجية التعليم والتعلم</h1>
+    <p class="section-subtitle">برنامج هندسة الحاسبات والنظم - كلية الهندسة جامعة كفر الشيخ</p>
+  </div>
+</section>
+
+<!-- ========== STRATEGY CONTENT ========== -->
+<section id="strategy-content">
+  <div class="container">
+    <div class="strategy-intro">
+      <p>تهدف استراتيجية التعليم والتعلم ببرنامج هندسة الحاسبات والنظم إلى توفير بيئة تعليمية محفزة للطلاب، تعتمد على دمج التكنولوجيا الحديثة مع أساليب التدريس المبتكرة. يتم التركيز على تحويل الطالب من متلقي سلبي إلى مشارك فعال في العملية التعليمية.</p>
+      <a href="assets/docs/strategy-computer.pdf" target="_blank" class="btn-download-pdf">
+        📥 تحميل وثيقة الاستراتيجية الكاملة (PDF)
+      </a>
+    </div>
+
+    <div class="accent-line mt-5"></div>
+    <h2 class="section-title">أهم الاستراتيجيات المتبعة</h2>
+
+    <div class="strategies-grid mt-4">
+      <!-- Strategy 1 -->
+      <div class="strategy-card">
+        <div class="s-icon">🧠</div>
+        <h3>العصف الذهني</h3>
+        <p>تشجيع الطلاب على توليد الأفكار بحرية لحل المشكلات الهندسية وتنمية التفكير الإبداعي.</p>
+        <button class="btn-read-more" onclick="toggleDetails(this)">اقرأ المزيد</button>
+        <div class="s-details">يعتمد العصف الذهني على طرح مشكلة هندسية وترك الحرية للطلاب لاقتراح حلول متنوعة دون تقييم مبدئي، مما ينمي قدراتهم على التفكير خارج الصندوق.</div>
+      </div>
+      
+      <!-- Strategy 2 -->
+      <div class="strategy-card">
+        <div class="s-icon">🧩</div>
+        <h3>حل المشكلات</h3>
+        <p>تدريب الطلاب على منهجية التفكير العلمي للتعامل مع التحديات البرمجية والهندسية.</p>
+        <button class="btn-read-more" onclick="toggleDetails(this)">اقرأ المزيد</button>
+        <div class="s-details">يتم تقديم مشكلات واقعية من سوق العمل ليقوم الطلاب بتحليلها وتصميم خوارزميات أو أنظمة مناسبة لحلها بكفاءة.</div>
+      </div>
+
+      <!-- Strategy 3 -->
+      <div class="strategy-card">
+        <div class="s-icon">🤝</div>
+        <h3>التعلم التعاوني</h3>
+        <p>تقسيم الطلاب لمجموعات عمل لتعزيز روح الفريق وتبادل الخبرات والمعارف.</p>
+        <button class="btn-read-more" onclick="toggleDetails(this)">اقرأ المزيد</button>
+        <div class="s-details">يشجع البرنامج العمل في مشاريع جماعية صغيرة وكبيرة، مما يكسب الطالب مهارات التواصل وتقبل الرأي الآخر وإدارة المهام.</div>
+      </div>
+
+      <!-- Strategy 4 -->
+      <div class="strategy-card">
+        <div class="s-icon">🗣️</div>
+        <h3>المناقشة والحوار</h3>
+        <p>خلق بيئة تفاعلية بين المحاضر والطلاب لتعميق الفهم وتصحيح المفاهيم.</p>
+        <button class="btn-read-more" onclick="toggleDetails(this)">اقرأ المزيد</button>
+        <div class="s-details">الابتعاد عن التلقين التقليدي واستخدام الأسئلة المفتوحة لتحفيز تفكير الطلاب وتشجيعهم على الاستنتاج والمشاركة.</div>
+      </div>
+
+      <!-- Strategy 5 -->
+      <div class="strategy-card">
+        <div class="s-icon">📖</div>
+        <h3>التعلم الذاتي</h3>
+        <p>تمكين الطالب من الاعتماد على نفسه في البحث واكتساب المعارف الجديدة.</p>
+        <button class="btn-read-more" onclick="toggleDetails(this)">اقرأ المزيد</button>
+        <div class="s-details">تكليف الطلاب بمهام بحثية وقراءات خارجية خارج المقرر الدراسي لمواكبة التطور السريع في هندسة الحاسبات.</div>
+      </div>
+
+      <!-- Strategy 6 -->
+      <div class="strategy-card">
+        <div class="s-icon">💻</div>
+        <h3>التعلم الإلكتروني</h3>
+        <p>دمج التكنولوجيا الرقمية وتوفير المنصات التعليمية لتعزيز عملية التعلم.</p>
+        <button class="btn-read-more" onclick="toggleDetails(this)">اقرأ المزيد</button>
+        <div class="s-details">استخدام منصات إدارة التعلم لرفع المحاضرات، وإجراء الاختبارات القصيرة، وتسليم التكليفات بصورة إلكترونية مرنة.</div>
+      </div>
+
+      <!-- Strategy 7 -->
+      <div class="strategy-card">
+        <div class="s-icon">📊</div>
+        <h3>العروض التقديمية</h3>
+        <p>إكساب الطالب مهارة عرض أفكاره ومشاريعه أمام الجمهور بثقة.</p>
+        <button class="btn-read-more" onclick="toggleDetails(this)">اقرأ المزيد</button>
+        <div class="s-details">تقديم نتائج المشاريع والأبحاث من خلال عروض تقديمية تعزز مهارات التواصل الفعال المطلوبة بشدة في سوق العمل.</div>
+      </div>
+
+      <!-- Strategy 8 -->
+      <div class="strategy-card">
+        <div class="s-icon">🚀</div>
+        <h3>المشروعات</h3>
+        <p>تطبيق الجانب النظري من خلال مشاريع عملية متكاملة (مصغرة ومشروع التخرج).</p>
+        <button class="btn-read-more" onclick="toggleDetails(this)">اقرأ المزيد</button>
+        <div class="s-details">تنفيذ مشاريع برمجية وإلكترونية لربط مفاهيم المقررات المختلفة ببعضها وإنتاج نماذج قابلة للتطبيق العملي.</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer mt-5">
+  <div class="container">
+    <p>© ٢٠٢٦ كلية الهندسة - جامعة كفر الشيخ | برنامج هندسة الحاسبات والنظم</p>
+    <div class="footer-links">
+      <a href="https://www.kfs.edu.eg" target="_blank">موقع الجامعة الرئيسي</a>
+      <a href="#">تواصل معنا</a>
+      <a href="#">الشروط والأحكام</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+// Navbar background on scroll
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    navbar.style.boxShadow = '0 4px 16px rgba(0,0,0,0.1)';
+  } else {
+    navbar.style.boxShadow = '0 2px 8px rgba(0,0,0,0.05)';
+  }
+});
+
+// Read more toggle functionality
+function toggleDetails(btn) {
+  const details = btn.nextElementSibling;
+  if(details.style.maxHeight && details.style.maxHeight !== '0px') {
+    details.style.maxHeight = '0px';
+    details.style.opacity = '0';
+    details.style.marginTop = '0';
+    btn.textContent = 'اقرأ المزيد';
+  } else {
+    details.style.maxHeight = details.scrollHeight + 'px';
+    details.style.opacity = '1';
+    details.style.marginTop = '16px';
+    btn.textContent = 'إخفاء التفاصيل';
+  }
+}
+</script>
+</body>
+</html>
